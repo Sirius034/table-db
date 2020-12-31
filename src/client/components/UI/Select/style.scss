@@ -1,0 +1,6 @@
+@import '@scss/mixins';
+
+.select {
+    color: rgb(13, 13, 14);
+    @include toolbar-item()
+}

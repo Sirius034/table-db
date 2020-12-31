@@ -1,0 +1,32 @@
+@import '@scss/mixins';
+
+.toolbar {
+    &__fields {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__field {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 2px;
+        margin: 10px;
+        
+        & .field-title {
+            margin-bottom: 2px;
+            padding-left: 5px;
+            font-size: .8rem;
+            font-weight: 600;
+            color: rgb(51, 87, 163);
+        }
+    }
+}

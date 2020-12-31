@@ -1,0 +1,23 @@
+@mixin block-shadow($blur: 5px, $stretching: 2px) {
+    box-shadow: 0 0 $blur $stretching rgba(32, 32, 32, 0.5);;
+}
+
+@mixin transition($field: all) {
+    transition: $field .4s ease-out;
+}
+
+@mixin toolbar-item {
+    padding: 3px 5px;
+    outline: none;
+    font-style: italic;
+    border: 2px solid rgb(138, 122, 122);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    @include transition();
+
+    &:hover {
+        outline: none;
+        border-color: rgb(125, 131, 126);
+        box-shadow: 0 0 2px 0 rgb(85, 87, 86);
+    }
+}

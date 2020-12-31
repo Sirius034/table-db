@@ -1,0 +1,36 @@
+@import '@scss/mixins';
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+
+    & li {
+        list-style: none;
+        font-size: 1rem;
+        padding: 2px 6px;
+        background-color: rgba(128, 128, 128, 0.541);
+        border-right: 1px solid rgb(255, 255, 255);
+        cursor: pointer;
+        @include transition();
+
+        &:first-child {
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+        }
+
+        &:last-child {
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            border-right: none;
+        }
+
+        &:hover {
+            background-color: rgba(128, 128, 128, 0.699);
+        }
+
+        &.active {
+            color: rgb(255, 255, 255);
+            background-color: rgba(128, 128, 128, 0.733);
+        }
+    }
+}

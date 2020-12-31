@@ -1,0 +1,13 @@
+@import '@scss/mixins';
+
+.container {
+    width: 80%;
+    min-width: 900px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 10px;
+    background: rgba(252, 252, 252, 0.986);
+    border-left: solid 1px rgb(148, 148, 148);
+    border-right: solid 1px rgb(148, 148, 148);
+    @include block-shadow(20px, 15px);
+}

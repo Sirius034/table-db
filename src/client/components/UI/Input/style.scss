@@ -1,0 +1,5 @@
+@import '@scss/mixins';
+
+.input {
+    @include toolbar-item();
+}

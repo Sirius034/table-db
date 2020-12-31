@@ -1,0 +1,31 @@
+@import '@scss/mixins'; 
+
+.block {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__toolbar {
+        width: 80%;
+        min-width: 500px;
+        margin-bottom: 60px;
+        padding: 20px;
+        border-radius: 5px;
+        background: rgb(216, 230, 243);
+        @include block-shadow(6px);
+    }
+
+    &__content {
+        width: 80%;
+        min-width: 500px;
+        border-radius: 5px;
+        padding: 20px;
+        @include block-shadow(6px);
+    }
+}
