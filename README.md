@@ -4,7 +4,7 @@
   
 ### Инструменты
 
-Проект основан на REACT js, NODE.js(express), mysql2(для подключения к базе данных), Webpack, SASS. 
+Проект основан на REACT js, NODE js(express), mysql2(для подключения к базе данных), Webpack, SASS. 
 
 ### Файл структура базы данных
 
